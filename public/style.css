@@ -1,0 +1,23 @@
+.icon {
+  color: #4299e1;
+  z-index: 1;
+}
+
+.icon-after::after {
+  content: " >";
+}
+
+.icon:hover {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+.unit-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: none;
+}
