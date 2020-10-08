@@ -34,6 +34,15 @@ module.exports = {
           "sans-serif",
         ],
       },
+      width: {
+        980: "980px",
+      },
+      height: {
+        400: "400px",
+        480: "480px",
+        500: "500px",
+        580: "580px",
+      },
     },
   },
   variants: {

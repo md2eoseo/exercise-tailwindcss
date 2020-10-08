@@ -9,7 +9,6 @@
 
 .icon:hover {
   color: #3182ce;
-  text-decoration: underline;
 }
 
 .unit-link {
@@ -20,4 +19,10 @@
   right: 0;
   bottom: 0;
   outline: none;
+}
+
+#pineapple-event {
+  background-image: url(img/pineapple_event.jpeg);
+  background-attachment: fixed;
+  background-blend-mode: lighten;
 }
