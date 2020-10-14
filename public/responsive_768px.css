@@ -1,0 +1,21 @@
+.sitemap h3 {
+  margin-top: 12px;
+}
+
+.sitemap li {
+  margin-left: 16px;
+}
+
+.dropdown-btn::before {
+  content: "+";
+  position: absolute;
+  right: 5%;
+}
+
+.dropdown-btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 12px;
+  border-bottom: 1.5px solid #eaeef3;
+}
