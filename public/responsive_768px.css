@@ -10,6 +10,15 @@
   content: "+";
   position: absolute;
   right: 5%;
+  transition: ease-out 0.4s;
+}
+
+.dropdown-btn-animation.dropdown-btn::before {
+  transform: rotate(45deg) scale(1.2);
+}
+
+.dropdown-btn-animation.dropdown-btn::after {
+  display: none;
 }
 
 .dropdown-btn::after {
@@ -18,4 +27,28 @@
   width: 100%;
   height: 12px;
   border-bottom: 1.5px solid #eaeef3;
+}
+
+.dropdown-menu::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 12px;
+  border-bottom: 1.5px solid #eaeef3;
+}
+
+.dropdown-menu-animation {
+  animation: 0.4s ease-out slide;
+}
+
+@keyframes slide {
+  from {
+    margin-top: -50px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
 }

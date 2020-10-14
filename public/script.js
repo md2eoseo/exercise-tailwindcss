@@ -11,6 +11,8 @@ const toggleSitemapHeader = (el) =>
   el.addEventListener("click", (e) => {
     const next = e.target.nextElementSibling;
     next.classList.toggle("hidden");
+    next.classList.toggle("dropdown-menu-animation");
+    el.classList.toggle("dropdown-btn-animation");
   });
 
 const preventDefaultClick = (el) =>
