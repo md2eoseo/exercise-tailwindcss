@@ -3,9 +3,15 @@
 const start = () => {
   console.log("Hello Tailwindcss!");
   document.querySelectorAll("a").forEach(preventDefaultClick);
-
   document.querySelectorAll(".dropdown-btn").forEach(toggleSitemapHeader);
+  document.querySelectorAll(".bag-view-btn").forEach(toggleBagView);
 };
+
+const toggleBagView = (el) =>
+  el.addEventListener("click", (e) => {
+    const bagView = document.querySelector(".bag-view");
+    bagView.classList.toggle("hidden");
+  });
 
 const toggleSitemapHeader = (el) =>
   el.addEventListener("click", (e) => {

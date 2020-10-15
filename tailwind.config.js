@@ -35,16 +35,26 @@ module.exports = {
         ],
       },
       width: {
+        280: "280px",
+        340: "340px",
         980: "980px",
       },
       minWidth: {
         320: "320px",
       },
       height: {
+        320: "320px",
         400: "400px",
         480: "480px",
         500: "500px",
         580: "580px",
+      },
+      borderRadius: {
+        xl: "0.75rem",
+        "2xl": "1rem",
+      },
+      backgroundColor: {
+        curtain: "rgba(0,0,0,0.48)",
       },
     },
   },
