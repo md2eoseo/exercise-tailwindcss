@@ -32,6 +32,7 @@
 }
 
 .bag-view {
+  height: 100vh;
   letter-spacing: -0.016em;
   border-color: #d2d2d7;
 }
