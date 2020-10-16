@@ -32,11 +32,13 @@ const toggleBagView = () => {
 };
 
 const toggleSitemapHeader = (e) => {
-  const el = e.target;
-  const next = e.target.nextElementSibling;
-  next.classList.toggle("hidden");
-  next.classList.toggle("dropdown-menu-animation");
-  el.classList.toggle("dropdown-btn-animation");
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    const el = e.target;
+    const next = e.target.nextElementSibling;
+    next.classList.toggle("hidden");
+    next.classList.toggle("dropdown-menu-animation");
+    el.classList.toggle("dropdown-btn-animation");
+  }
 };
 
 window.addEventListener("DOMContentLoaded", start);
