@@ -1,7 +1,13 @@
 "use strict";
 
+const HTML = {};
+
 const start = () => {
   console.log("Hello Tailwindcss!");
+
+  HTML.bagView = document.querySelector(".bag-view");
+  HTML.bagViewBtnCarets = document.querySelectorAll(".bag-view-btn-caret");
+
   document.querySelectorAll("a").forEach((el) =>
     el.addEventListener("click", (e) => {
       e.preventDefault();
@@ -19,8 +25,10 @@ const start = () => {
 };
 
 const toggleBagView = () => {
-  const bagView = document.querySelector(".bag-view");
-  bagView.classList.toggle("hidden");
+  HTML.bagView.classList.toggle("hidden");
+  HTML.bagViewBtnCarets.forEach((el) => {
+    el.classList.toggle("hidden");
+  });
 };
 
 const toggleSitemapHeader = (e) => {

@@ -26,7 +26,7 @@
 }
 
 #pineapple-event {
-  background-image: url(img/pineapple_event.jpeg);
+  background-image: url(../img/pineapple_event.jpeg);
   background-attachment: fixed;
   background-blend-mode: lighten;
 }
@@ -64,4 +64,19 @@
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+  .bag-view {
+    right: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .nav-content {
+    position: relative;
+  }
+  .bag-view {
+    right: -108px;
+  }
 }
