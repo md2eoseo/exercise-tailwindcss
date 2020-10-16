@@ -56,6 +56,9 @@ module.exports = {
       backgroundColor: {
         curtain: "rgba(0,0,0,0.48)",
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   variants: {

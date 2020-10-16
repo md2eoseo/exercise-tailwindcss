@@ -54,6 +54,14 @@
   }
 }
 
+.bag-view {
+}
+
 .bag-view-curtain {
   filter: blur(1px);
+}
+
+.bag-view-btn-caret::after {
+  border-color: #fff;
+  bottom: -16px;
 }
