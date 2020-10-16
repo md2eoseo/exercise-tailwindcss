@@ -70,15 +70,14 @@
             </svg></span>
         </li>
       </ul>
-      <aside
-        class="bag-view hidden absolute right-0 bg-white w-full md:w-280 md:rounded-2xl md:border-gray-300 md:border-2">
-        <div class="w-full px-12 md:px-4">
+      <aside class="bag-view hidden absolute right-0 w-full md:w-280">
+        <div class="w-full px-12 bg-white md:px-4 md:rounded-2xl md:border-gray-300 md:border-2">
           <div class="bag-space flex justify-center items-center h-24">
             <!-- TODO: Get items from bag and show the status -->
             <span class="text-gray-600">Your Bag is empty.</span>
           </div>
           <div>
-            <ul class="mb-4">
+            <ul>
               <a href="#">
                 <li><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
@@ -122,6 +121,7 @@
             </ul>
           </div>
         </div>
+        <div class="bag-view-curtain md:hidden w-full h-64 bg-curtain"></div>
       </aside>
     </div>
   </nav>
