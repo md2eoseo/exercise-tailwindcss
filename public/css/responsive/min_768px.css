@@ -60,5 +60,71 @@
 
 .bag-view-btn-caret::after {
   border-color: #fff;
-  bottom: -16px;
+  bottom: -4px;
+}
+
+.bar label {
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+.menuicon-checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.menuicon-bread {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 9px;
+  left: 9px;
+}
+.menuicon-crust {
+  position: absolute;
+  width: 17px;
+  height: 1px;
+  background: #000;
+  border-radius: 0.5px;
+  left: 7px;
+  transition: all 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+.menuicon-top {
+  top: 11px;
+}
+.menuicon-bottom {
+  bottom: 11px;
+}
+.menuicon.on .menuicon-crust {
+  top: 15px;
+}
+.menuicon.on .menuicon-top {
+  transform: scaleX(1.2) rotate(50deg);
+}
+.menuicon.on .menuicon-bottom {
+  transform: scaleX(1.2) rotate(-50deg);
+}
+.menu {
+  opacity: 0;
+  height: 0px;
+  transition: all 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+.menu.on {
+  opacity: 1;
+  height: 100vh;
+}
+.logo {
+  position: absolute;
+  width: 32px;
+  top: 7px;
+  left: 7px;
+}
+.bag {
+  position: absolute;
+  top: 11px;
+  right: 10px;
 }

@@ -14,7 +14,7 @@
 
 <body class="min-w-320">
   <nav class="fixed top-0 w-full h-12 flex justify-center bg-yellow-600 bg-opacity-75 backdrop-blur z-50">
-    <div class="nav-content w-full max-w-screen-lg h-full px-3 relative">
+    <div class="nav-content w-full max-w-screen-lg h-full md:px-3 relative">
       <ul class="h-full hidden md:flex justify-between items-center space-x-8 text-green-900">
         <li class="w-8">
           <a href="#"><span><img src="img/logo.svg" alt="pineapple" class="w-8" /></span></a>
@@ -54,26 +54,36 @@
           <span class="bag-view-btn-caret hidden"></span>
         </li>
       </ul>
-      <ul class="h-full md:hidden flex justify-between items-center space-x-8">
+      <ul class="bar h-full md:hidden flex justify-between items-center">
         <li>
-          <a href="#"><span><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 8h16M4 16h16"></path>
-              </svg></span></a>
+          <label class="menuicon" for="menustate">
+            <input class="menuicon-checkbox" type="checkbox">
+            <span class="menuicon-bread"><span class="menuicon-crust menuicon-top"></span></span>
+            <span class="menuicon-bread"><span class="menuicon-crust menuicon-bottom"></span></span>
+          </label>
         </li>
-        <li class="w-8">
-          <a href="#"><span><img src="img/logo.svg" alt="pineapple" class="w-8" /></span></a>
+        <li>
+          <label for="logo"><img src="img/logo.svg" alt="pineapple" class="logo" /></label>
         </li>
         <li class="btn bag-view-btn relative">
-          <span><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-            </svg></span>
+          <label for="bag"><span><svg class="bag w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+              </svg></span></label>
           <span class="bag-view-btn-caret hidden"></span>
         </li>
       </ul>
-      <aside class="bag-view hidden absolute right-0 w-full md:w-280">
+      <aside class="menu md:hidden absolute w-full bg-yellow-700 text-green-700">
+        <div>Search</div>
+        <ul>
+          <li>PiNEAPPLE</li>
+          <li>hAwaiian Pizza</li>
+          <li>PiNEAPPLE House</li>
+          <li>Support</li>
+        </ul>
+      </aside>
+      <aside class="bag-view hidden absolute w-full md:w-280">
         <div class="w-full px-12 bg-white md:px-4 md:rounded-2xl md:border-1">
           <div class="bag-space flex justify-center items-center h-24">
             <!-- TODO: Get items from bag and show the status -->

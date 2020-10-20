@@ -7,6 +7,8 @@ const start = () => {
 
   HTML.bagView = document.querySelector(".bag-view");
   HTML.bagViewBtnCarets = document.querySelectorAll(".bag-view-btn-caret");
+  HTML.menuicon = document.querySelector(".menuicon");
+  HTML.menu = document.querySelector(".menu");
 
   document.querySelectorAll("a").forEach((el) =>
     el.addEventListener("click", (e) => {
@@ -22,6 +24,17 @@ const start = () => {
   document
     .querySelector(".bag-view-curtain")
     .addEventListener("click", toggleBagView);
+  document
+    .querySelector(".menuicon-checkbox")
+    .addEventListener("click", (e) => {
+      if (e.target.checked) {
+        HTML.menuicon.classList.add("on");
+        HTML.menu.classList.add("on");
+      } else {
+        HTML.menuicon.classList.remove("on");
+        HTML.menu.classList.remove("on");
+      }
+    });
 };
 
 const toggleBagView = () => {
