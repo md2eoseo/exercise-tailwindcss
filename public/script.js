@@ -5,6 +5,7 @@ const HTML = {};
 const start = () => {
   console.log("Hello Tailwindcss!");
 
+  HTML.nav = document.querySelector(".nav-top");
   HTML.bagView = document.querySelector(".bag-view");
   HTML.bagViewBtnCarets = document.querySelectorAll(".bag-view-btn-caret");
   HTML.menuicon = document.querySelector(".menuicon");
@@ -24,15 +25,14 @@ const start = () => {
   document
     .querySelector(".bag-view-curtain")
     .addEventListener("click", toggleBagView);
+  // maybe I can just use :checked pseudo class for animation
   document
     .querySelector(".menuicon-checkbox")
     .addEventListener("click", (e) => {
       if (e.target.checked) {
-        HTML.menuicon.classList.add("on");
-        HTML.menu.classList.add("on");
+        HTML.nav.classList.add("menu-on");
       } else {
-        HTML.menuicon.classList.remove("on");
-        HTML.menu.classList.remove("on");
+        HTML.nav.classList.remove("menu-on");
       }
     });
 };

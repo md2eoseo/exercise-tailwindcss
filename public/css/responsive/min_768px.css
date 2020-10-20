@@ -99,23 +99,47 @@
 .menuicon-bottom {
   bottom: 11px;
 }
-.menuicon.on .menuicon-crust {
+.menu-on .menuicon-crust {
   top: 15px;
 }
-.menuicon.on .menuicon-top {
+.menu-on .menuicon-top {
   transform: scaleX(1.2) rotate(50deg);
 }
-.menuicon.on .menuicon-bottom {
+.menu-on .menuicon-bottom {
   transform: scaleX(1.2) rotate(-50deg);
 }
 .menu {
-  opacity: 0;
-  height: 0px;
-  transition: all 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  overflow: hidden;
+  height: 0;
+  transition: all 0.2806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
 }
-.menu.on {
-  opacity: 1;
+.menu-on {
+  background-color: #b7791f;
+  transition: all 0.2806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+.menu-on .menu {
   height: 100vh;
+  background-color: #b7791f;
+}
+.menu-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  padding: 16px 0;
+}
+.menu-list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-bottom: 1.5px solid #666a70;
+}
+.menu-list li:first-child::before {
+  width: 150%;
+  left: -30%;
 }
 .logo {
   position: absolute;
