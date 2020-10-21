@@ -113,6 +113,22 @@
   height: 0;
   transition: all 0.2806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
 }
+.menu.focused {
+  transform: translateY(-3rem);
+}
+.menu-search-text {
+  width: 98%;
+  transition: all 0.2806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+.menu-search-text:focus {
+  width: 75%;
+}
+.menu-search-cancel {
+  transition: all 0.8s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+.menu-search-text:focus + .menu-search-cancel {
+  opacity: 1;
+}
 .menu-on {
   background-color: #b7791f;
   transition: all 0.2806s cubic-bezier(0.04, 0.04, 0.12, 0.96);

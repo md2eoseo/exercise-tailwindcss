@@ -79,9 +79,11 @@
         </li>
       </ul>
       <aside class="menu md:hidden absolute w-full flex flex-col items-center bg-yellow-600">
-        <div class="w-full flex justify-center items-center py-2">
-          <input class="w-11/12 h-10 pl-4 rounded-lg text-lg outline-none" type="text" placeholder="Search apple.com">
-          <button class="hidden">Cancel</button>
+        <div class="menu-search w-full flex items-center pl-2 py-2 relative">
+          <input class="menu-search-text h-10 pl-4 rounded-lg text-lg outline-none z-10" type="text"
+            placeholder="Search apple.com">
+          <button
+            class="menu-search-cancel text-blue-700 absolute right-0 px-4 opacity-0 focus:outline-none">Cancel</button>
         </div>
         <ul class="menu-list flex flex-col items-center w-full min-h-screen">
           <li>PiNEAPPLE</li>

@@ -10,6 +10,8 @@ const start = () => {
   HTML.bagViewBtnCarets = document.querySelectorAll(".bag-view-btn-caret");
   HTML.menuicon = document.querySelector(".menuicon");
   HTML.menu = document.querySelector(".menu");
+  HTML.menuSearchText = document.querySelector(".menu-search-text");
+  HTML.menuSearchCancel = document.querySelector(".menu-search-cancel");
 
   document.querySelectorAll("a").forEach((el) =>
     el.addEventListener("click", (e) => {
@@ -41,6 +43,17 @@ const start = () => {
         HTML.nav.classList.remove("menu-on");
       }
     });
+  HTML.menuSearchText.addEventListener("focusin", () => {
+    HTML.menu.classList.add("focused");
+  });
+  HTML.menuSearchText.addEventListener("focusout", () => {
+    HTML.menu.classList.remove("focused");
+  });
+  HTML.menuSearchCancel.addEventListener("click", removeSearchText);
+};
+
+const removeSearchText = () => {
+  HTML.menuSearchText.value = "";
 };
 
 const toggleBagView = () => {
