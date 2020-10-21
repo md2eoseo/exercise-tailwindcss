@@ -30,6 +30,12 @@ const start = () => {
     .querySelector(".menuicon-checkbox")
     .addEventListener("click", (e) => {
       if (e.target.checked) {
+        if (!HTML.bagView.classList.contains("hidden")) {
+          HTML.bagView.classList.add("hidden");
+          HTML.bagViewBtnCarets.forEach((el) => {
+            el.classList.add("hidden");
+          });
+        }
         HTML.nav.classList.add("menu-on");
       } else {
         HTML.nav.classList.remove("menu-on");
